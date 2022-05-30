@@ -1,6 +1,1 @@
-Imagine your files structure are like this:
-
-
-You can also get the current folder path of your script and load your image from that.
-
-
+michael ganteng sekali kata daniel
