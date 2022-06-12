@@ -20,9 +20,9 @@ right_frame = Frame(root, width=410, height=450, bg='white')
 right_frame.grid(row=0, column=2, padx=5, pady=5)
 
 # customize frame
-Label(left_frame, text="TAKE A PHOTO OF DIGITAL TEXT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
-Label(middle_frame, text="PHOTO RESULT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
-Label(right_frame, text="IMAGE TO TEXT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
+# Label(left_frame, text="TAKE A PHOTO OF DIGITAL TEXT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
+# Label(middle_frame, text="PHOTO RESULT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
+# Label(right_frame, text="IMAGE TO TEXT", bg='white', fg='black').grid(row=0, column=0, padx=5, pady=5)
 # Create frames ------------------------------------------------------------------------------------------------------------
 
 # webcams ------------------------------------------------------------------------------------------------------------------
@@ -64,19 +64,32 @@ def Audio():
 # button functions ---------------------------------------------------------------------------------------------------------
 
 # buttons ------------------------------------------------------------------------------------------------------------------
-# # Read the button Image
-# image = Image.open('Assets\camera.png')
+# Read the button Image
+camera = Image.open('Assets\camera.png')
+scan = Image.open('Assets\scan.png')
+play = Image.open('Assets\play.png')
 
-# # Resize the button image
-# resize_image = image.resize((50, 50))
-# img = ImageTk.PhotoImage(resize_image)
+# Resize the button image
+resize_camera = camera.resize((50, 50))
+resize_scan = scan.resize((50, 50))
+resize_play = play.resize((50, 50))
 
-photo = Button(left_frame, text='Take a Photo', padx=10, pady=10, borderwidth=0, command=Camera).grid(row=2, column=0, padx=5, pady=5)
-# takePhoto = Button(left_frame, image=img, borderwidth=0, command= Camera)
-# takePhoto.image = img
-# takePhoto.grid(row=2, column=0)
-scan = Button(middle_frame, text='Scan Image', padx=10, pady=10, borderwidth=0, command=Scan).grid(row=2, column=0, padx=5, pady=5)
-read = Button(right_frame, text='Read Text', padx=10, pady=10, borderwidth=0, command=Audio).grid(row=2, column=0, padx=5, pady=5)
+cmra = ImageTk.PhotoImage(resize_camera)
+scn = ImageTk.PhotoImage(resize_scan)
+ply = ImageTk.PhotoImage(resize_play)
+
+# photo = Button(left_frame, text='Take a Photo', padx=10, pady=10, borderwidth=0, command=Camera).grid(row=2, column=0, padx=5, pady=5)
+takePhoto = Button(left_frame, image=cmra, borderwidth=0, command= Camera)
+takePhoto.image = cmra
+takePhoto.grid(row=2, column=0, padx=5, pady=5)
+
+scanPhoto = Button(middle_frame, image=scn, borderwidth=0, command= Scan)
+scanPhoto.image = scn
+scanPhoto.grid(row=2, column=0, padx=5, pady=5)
+
+playAudio = Button(right_frame, image=ply, borderwidth=0, command= Audio)
+playAudio.image = ply
+playAudio.grid(row=2, column=0, padx=5, pady=5)
 # buttons -------------------------------------------------------------------------------------------------------------------
 
 # show file recognize.txt ---------------------------------------------------------------------------------------------------
