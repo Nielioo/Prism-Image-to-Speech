@@ -7,7 +7,7 @@ import googletrans
 root = Tk()
 root.title('Prism')
 root.iconbitmap('Assets\logo.ico')
-root.geometry('1180x320')
+root.geometry('1180x300')
 # root.maxsize(1520, 450)
 root.config(bg="skyblue")
 
@@ -47,7 +47,7 @@ show_frames()
 # webcams ------------------------------------------------------------------------------------------------------------------
 
 # show the Image result ----------------------------------------------------------------------------------------------------
-image2 = Image.open('temp.png')
+image2 = Image.open('Assets\image_placeholder.png')
 resize_image = image2.resize((350, 210))
 img2 = ImageTk.PhotoImage(resize_image)
 Label(middle_frame, image=img2).grid(row=1, column=0, padx=5, pady=5)
