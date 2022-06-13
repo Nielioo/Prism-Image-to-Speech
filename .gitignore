@@ -1,7 +1,10 @@
 # Other Files
 image.png
+resize.png
+grayscale.png
+threshold.png
 recognized.txt
-audio.mp3
+speech.mp3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
