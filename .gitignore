@@ -1,5 +1,6 @@
 # Other Files
 Storage/*
+!Storage/
 recognized.txt
 *.dat
 
