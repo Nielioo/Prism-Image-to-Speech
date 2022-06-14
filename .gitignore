@@ -1,6 +1,6 @@
 # Other Files
 Storage/*
-!Storage/.gitkeep
+!Storage/.storage
 recognized.txt
 *.dat
 
