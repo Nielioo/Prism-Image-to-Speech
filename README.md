@@ -1,5 +1,7 @@
 # Prism-Image-to-Speech
 
+Artificial Intelegence Final Project June 2022 [Semester 4]
+
 Prism adalah aplikasi yang dapat mempermudah penderita penyakit disleksia dalam membaca. Dengan menggunakan kamera handphone, penderita disleksia dapat menscan tulisan yang ingin dibaca. Sistem akan mengubah teks berupa gambar menjadi suara yang dapat dipahami oleh penderita disleksia agar memudahkan mereka dalam mengenali tulisan secara digital dengan akurasi yang tinggi.
 
 
